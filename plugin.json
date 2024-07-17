@@ -1,89 +1,23 @@
 {
-    "name": "my-custom-payment",
+    "name": "TargobankPayment",
+    "author": "Omsan Demirel - Sedel Kaya",
+    "email": "osmandemirel735@gmail.com",
     "version": "1.0.0",
-    "author": "Osman Demirel-Sedel Kaya",
-    "license": "ISC",
-    "description": {
-        "en": "Custom payment method for TARGOBANK financing.",
-        "de": "Benutzerdefinierte Zahlungsmethode für TARGOBANK-Finanzierung."
-    },
+    "namespace": "TargobankPayment",
     "type": "payment",
-    "serviceProvider": "MyCustomPayment\\MyCustomPaymentServiceProvider",
-    "install": [
-        "src/Migrations/CreateMyCustomPaymentTables.php"
-    ],
-    "runOnInstall": true,
-    "runOnUpdate": true,
-    "requiredPlugins": [],
-    "bootstrap": "src/MyCustomPaymentServiceProvider.php",
-    "settings": [
+    "serviceProvider": "TargobankPayment\\TargobankPaymentServiceProvider",
+    "pluginIcon": "icon.png",
+    "paymentMethods": [
         {
-            "key": "my-custom-payment.koop_id",
-            "type": "text",
-            "defaultValue": "villastore241",
-            "label": {
-                "en": "KOOP ID",
-                "de": "KOOP ID"
+            "pluginKey": "targobank",
+            "name": {
+                "de": "TARGOBANK Finanzierung",
+                "en": "TARGOBANK Financing"
             },
             "description": {
-                "en": "The KOOP ID provided by TARGOBANK.",
-                "de": "Die von TARGOBANK bereitgestellte KOOP ID."
-            },
-            "required": true,
-            "group": "general"
-        },
-        {
-            "key": "my-custom-payment.dealer_id",
-            "type": "text",
-            "defaultValue": "804625",
-            "label": {
-                "en": "Dealer ID",
-                "de": "Händlerkennziffer"
-            },
-            "description": {
-                "en": "The Dealer ID provided by TARGOBANK.",
-                "de": "Die von TARGOBANK bereitgestellte Händlerkennziffer."
-            },
-            "required": true,
-            "group": "general"
-        },
-        {
-            "key": "my-custom-payment.username",
-            "type": "text",
-            "defaultValue": "Villastore",
-            "label": {
-                "en": "Username",
-                "de": "Benutzername"
-            },
-            "description": {
-                "en": "The username for the TARGOBANK dealer portal.",
-                "de": "Der Benutzername für das TARGOBANK-Händlerportal."
-            },
-            "required": true,
-            "group": "general"
-        },
-        {
-            "key": "my-custom-payment.password",
-            "type": "text",
-            "defaultValue": "Villastore2023#",
-            "label": {
-                "en": "Password",
-                "de": "Kennwort"
-            },
-            "description": {
-                "en": "The password for the TARGOBANK dealer portal.",
-                "de": "Das Kennwort für das TARGOBANK-Händlerportal."
-            },
-            "required": true,
-            "group": "general"
-        }
-    ],
-    "translations": [],
-    "routing": {
-        "web": {
-            "post": {
-                "my-custom-payment/process": "MyCustomPayment\\Controllers\\PaymentController@processPayment"
+                "de": "Zahlen Sie sicher und bequem mit TARGOBANK.",
+                "en": "Pay securely and conveniently with TARGOBANK."
             }
         }
-    }
+    ]
 }

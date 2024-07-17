@@ -1,0 +1,25 @@
+{
+    "name": "My Custom Payment",
+    "version": "1.0.0",
+    "price": 0,
+    "shortDescription": {
+        "en": "Custom payment method for TARGOBANK financing.",
+        "de": "Benutzerdefinierte Zahlungsmethode f\u00fcr TARGOBANK-Finanzierung."
+    },
+    "categories": [
+        "payment"
+    ],
+    "keywords": [
+        "payment",
+        "financing",
+        "targobank"
+    ],
+    "availability": [
+        "stable"
+    ],
+    "license": "ISC",
+    "author": {
+        "name": "Your Name",
+        "email": "your.email@example.com"
+    }
+}

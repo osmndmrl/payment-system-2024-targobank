@@ -1,0 +1,12 @@
+{
+    "type": "payment",
+    "serviceProvider": "MyCustomPayment\\MyCustomPaymentServiceProvider",
+    "translations": [],
+    "routing": {
+        "web": {
+            "post": {
+                "my-custom-payment/process": "MyCustomPayment\\Controllers\\PaymentController@processPayment"
+            }
+        }
+    }
+}
