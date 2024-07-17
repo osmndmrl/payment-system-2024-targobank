@@ -1,13 +1,13 @@
 {
     "name": "my-custom-payment",
     "version": "1.0.0",
-    "author": "Osman Demirel - Sedel Kaya",
+    "author": "Your Name",
     "license": "ISC",
     "description": "A custom payment method for Plentymarkets",
     "main": "index.js",
     "dependencies": {
-      "body-parser": "^1.20.2",
-      "crypto": "^1.0.1",
-      "express": "^4.19.2"
+        "body-parser": "^1.20.2",
+        "crypto": "^1.0.1",
+        "express": "^4.19.2"
     }
-  }
+}
