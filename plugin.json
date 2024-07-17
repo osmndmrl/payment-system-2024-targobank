@@ -1,24 +1,13 @@
 {
-    "name": "TargobankPayment",
-    "author": "Omsan Demirel - Sedel Kaya",
-    "email": "osmandemirel735@gmail.com",
+    "name": "my-custom-payment",
     "version": "1.0.0",
-    "namespace": "TargobankPayment",
-    "type": "payment",
-    "serviceProvider": "TargobankPayment\\TargobankPaymentServiceProvider",
-    "pluginIcon": "icon.png",
-    "paymentMethods": [
-      {
-        "pluginKey": "targobank",
-        "name": {
-          "de": "TARGOBANK Finanzierung",
-          "en": "TARGOBANK Financing"
-        },
-        "description": {
-          "de": "Zahlen Sie sicher und bequem mit TARGOBANK.",
-          "en": "Pay securely and conveniently with TARGOBANK."
-        }
-      }
-    ]
-  }
-  
+    "author": "Your Name",
+    "license": "ISC",
+    "description": "A custom payment method for Plentymarkets",
+    "main": "index.js",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "crypto": "^1.0.1",
+        "express": "^4.19.2"
+    }
+}
