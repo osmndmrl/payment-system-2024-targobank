@@ -1,7 +1,7 @@
 {
-    "name": "my-custom-payment",
+    "name": "targobank",
     "version": "1.0.0",
-    "author": "Your Name",
+    "author": "Osman Demirel-Sedel Kaya",
     "license": "ISC",
     "description": "A custom payment method for Plentymarkets",
     "main": "index.js",
