@@ -1,6 +1,6 @@
 {
-    "name": "My Custom Payment",
-    "author": "Omsan Demirel - Sedel Kaya",
+    "name": "TBPayment",
+    "author": "Osman Demirel - Sedel Kaya",
     "email": "osmandemirel735@gmail.com",
     "version": "1.0.0",
     "namespace": "TargobankPayment",
